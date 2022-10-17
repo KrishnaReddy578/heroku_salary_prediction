@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            ML app
+        </title>
+
+    </head>
+
+    <body>
+        <form action="predict" method="post">
+        <input type="number" name="experience" placeholder="experience" required="required" />
+        <input type="number" name="test_score" placeholder="test_score" required="required" />
+        <input type="number" name="Interview_score" placeholder="Interview_score" required="required" />
+        
+        <button type="submit"> Predict </button>
+    
+        </form>
+
+        {{prediction_text}}
+
+    </body>
+    <script src='static/abc.js'></script>
+</html>
